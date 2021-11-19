@@ -2,26 +2,23 @@
 Use the WASD keys to move. Collect all of the coins to win!
 
 # Project Requirements
-SDL2
-SDL2 image
-An installer for Coin Collector is in the Setup/Release folder.
+- SDL2 
+- SDL2 image 
+- An installer for Coin Collector is in the Setup/Release folder.
 
 # Code Structure Overview
 This project falls under Capstone Option 1: a video game.
 
-Game.cpp/.h runs all of the code necessary to initialize SDL components and assets,
+- Game.cpp/.h runs all of the code necessary to initialize SDL components and assets,
 accept inputs from the player and render and update the images to the screen. It also
 checks for our win condition and clears the game upon closing.
-
-Texture.h handles loading textures into SDL and drawing the texture to the screen.
-
-Entity.h / Components.h are the base classes for the game's Entity Component System,
+- Texture.h handles loading textures into SDL and drawing the texture to the screen.
+- Entity.h / Components.h are the base classes for the game's Entity Component System,
 which was developed with the assistance of Carl Birch and his SDL tutorial series.
-
-MovementComponent.h handles the entity's position and size on the screen.
-ImageComponent.h handles the entity's texture and animations.
-MapComponent.h handles loading the game's tilesets and arranging them in a specific grid.
-InputComponent.h handles the player's input and how it affects player-controlled entities.
+- MovementComponent.h handles the entity's position and size on the screen.
+- ImageComponent.h handles the entity's texture and animations.
+- MapComponent.h handles loading the game's tilesets and arranging them in a specific grid.
+- InputComponent.h handles the player's input and how it affects player-controlled entities.
 
 # Rubric Completion
 - The project demonstrates an understand of C++ functions and control structures by
